@@ -34,3 +34,10 @@
 .channel {
   font-size: 0.9rem;
 }
+
+.mainList {
+  width: 50%;
+}
+.subList {
+  width: 100%;
+}

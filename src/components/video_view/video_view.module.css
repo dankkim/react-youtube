@@ -1,0 +1,12 @@
+.container {
+  flex: 3;
+}
+
+iframe {
+  width: 100%;
+  height: 40vw;
+}
+
+pre {
+  white-space: pre-wrap;
+}
