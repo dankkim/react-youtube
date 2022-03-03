@@ -11,6 +11,7 @@ function App() {
 
   const selectVideo = video => {
     setSelectedVideo(video);
+    window.scroll(0, 0);
   };
 
   // [] : 마운트 될 때 한번만 실행
@@ -52,7 +53,7 @@ function App() {
 
   // return <VideoList videos={videos}/>;
   return (
-    <>
+    <div className={styles.wrap}>
       <SearchHeader onSearch={search} />
       <div className={styles.content}>
         {selectedVideo && <VideoView video={selectedVideo} />}
@@ -62,7 +63,7 @@ function App() {
           onVideoClick={selectVideo}
         />
       </div>
-    </>
+    </div>
   );
 }
 

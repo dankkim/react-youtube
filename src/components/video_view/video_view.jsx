@@ -12,9 +12,9 @@ const videoView = ({ video, video: { snippet } }) => {
         // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <h2>{snippet.title}</h2>
-      <h3>{snippet.channelTitle}</h3>
-      <pre>{snippet.description}</pre>
+      <h2 className={styles.title}>{snippet.title}</h2>
+      <h3 className={styles.channel}>{snippet.channelTitle}</h3>
+      <pre className={styles.desc}>{snippet.description}</pre>
     </div>
   );
 };

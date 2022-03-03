@@ -1,15 +1,21 @@
-.app {
-  max-width: 80rem;
+body {
+  background: #181818;
 }
 
 .content {
   display: flex;
+  flex-wrap: wrap;
+  padding: 1.4em 8em; 
 }
 
-.detail {
-  flex: 1 1 70%;
+@media (max-width: 1200px) {
+  .content {
+    padding: 1.4em 1.4em;
+  }
 }
 
-.list {
-  flex: 1 1 30%;
+@media (max-width: 820px) {
+  .content {
+    padding: 1.4em 1em; 
+  }
 }

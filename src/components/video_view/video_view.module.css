@@ -1,5 +1,6 @@
 .container {
   flex: 3;
+  margin-bottom: 2em;
 }
 
 iframe {
@@ -7,6 +8,25 @@ iframe {
   height: 40vw;
 }
 
-pre {
+
+.title {
+  color: #fff;
+  margin: 1.4em 0 0.5em;
+}
+.channel {
+  margin-top: 0;
+  color: #9c9c9c;
+  border-bottom: 1px solid #4d4d4d;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+.desc {
   white-space: pre-wrap;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-basis: 100%;
+  }
 }

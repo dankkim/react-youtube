@@ -5,11 +5,8 @@ const VideoItem = ({ video, video: { snippet }, display, onVideoClick }) => {
   const displayType = display === "subList" ? styles.subList : styles.mainList;
 
   return (
-    <li
-      className={`${styles.container} ${displayType}`}
-      onClick={() => onVideoClick(video)}
-    >
-      <div className={styles.video}>
+    <li className={`${styles.container} ${displayType}`}>
+      <div className={styles.video} onClick={() => onVideoClick(video)}>
         <img
           className={styles.thumbnail}
           src={snippet.thumbnails.medium.url}
