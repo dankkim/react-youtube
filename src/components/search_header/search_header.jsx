@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
+import { memo } from "react/cjs/react.production.min";
 import styles from "./search_header.module.css";
 
-const SearchHeader = ({ onSearch }) => {
+const SearchHeader = memo(({ onSearch }) => {
   const inputRef = useRef();
 
   const handleSearch = () => {
@@ -21,6 +22,7 @@ const SearchHeader = ({ onSearch }) => {
 
   const refreshVideo = () => {
     onSearch(null);
+    inputRef.current.value = null;
   };
 
   return (
@@ -94,6 +96,6 @@ const SearchHeader = ({ onSearch }) => {
       </div>
     </header>
   );
-};
+});
 
 export default SearchHeader;

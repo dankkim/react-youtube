@@ -22,6 +22,7 @@ header {
   border: 0;
   padding: 0;
   background: none;
+  cursor: pointer;
 }
 
 .logo svg {
@@ -54,6 +55,7 @@ input::placeholder {
   width: 4.5em;
   background: #323232;
   border: none;
+  cursor: pointer;
 }
 
 .searchBtn svg {

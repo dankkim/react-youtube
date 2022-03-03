@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./video_view.module.css";
 
 const videoView = ({ video, video: { snippet } }) => {
-  console.log(snippet);
   return (
     <div className={styles.container}>
       <iframe
